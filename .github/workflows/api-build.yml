@@ -17,6 +17,8 @@ jobs:
       - run: dotnet --list-sdks
       - run: dotnet build
         working-directory: ./api
+      - run: dotnet test
+        working-directory: ./api
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
